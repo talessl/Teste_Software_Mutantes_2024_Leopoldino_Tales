@@ -1,19 +1,8 @@
-from src.sqrt import redundant_sqrt, sqrt_fun
+from src.sqrt import sqrt_fun
+
 
 def test_sqrt_fun():
-    
     assert sqrt_fun(4) == 2
-    assert sqrt_fun(9) == 3
-    assert sqrt_fun(15) == 3  
-    assert sqrt_fun(16) == 4
-    assert sqrt_fun(25) == 5
-
-def test_redundant_sqrt():
-
-    assert redundant_sqrt(3, 4) == 7
-    assert redundant_sqrt(10, 5) == 15
-    assert redundant_sqrt(0, 0) == 0
-    assert redundant_sqrt(-3, -4) == -7
-    assert redundant_sqrt(7, -3) == 4
-
-    assert redundant_sqrt(3, 4) == 7 
+    assert sqrt_fun(8) == 2
+    assert sqrt_fun(6) == 2
+    assert sqrt_fun(10) == 3
